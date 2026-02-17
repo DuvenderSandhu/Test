@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Get a Quote | Trupti Enterprises - Solar Installation Bhopal</title>
+    <!-- SEO Meta -->
+    <meta name="description" content="Get a free quote for solar installation from Trupti Enterprises. Residential, commercial, solar pumps, hybrid & off-grid systems. Free site survey & subsidy guidance.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #ffffff;
+            color: #1e2e2a;
+            line-height: 1.5;
+        }
+
+        /* Container - Mobile First */
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                padding: 0 32px;
+                max-width: 1280px;
+            }
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0F2E26;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #0F2E26;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.5rem; }
+        }
+
+        @media (min-width: 1024px) {
+            h1 { font-size: 3.2rem; }
+            h2 { font-size: 3rem; }
+        }
+
+        .section-subhead {
+            font-size: 1.1rem;
+            color: #5f7c73;
+            max-width: 800px;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Buttons */
+        .btn-primary, .btn-outline, .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #0F2E26;
+            color: white;
+            box-shadow: 0 10px 20px -8px #0F2E26;
+        }
+
+        .btn-primary:hover {
+            background: #1a4a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -8px #0F2E26;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #0F2E26;
+            border: 2px solid #0F2E26;
+        }
+
+        .btn-outline:hover {
+            background: #0F2E26;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-wa:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: #0F2E26;
+            color: #e6f0ec;
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .top-contact a {
+            color: #FFD966;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+
+        .top-contact a:hover {
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            .top-bar .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        /* Header */
+        .main-header {
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            color: #0F2E26;
+            line-height: 1.2;
+        }
+
+        .logo-text h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            color: #5f7c73;
+            display: none;
+        }
+
+        /* Desktop Navigation */
+        .nav-menu {
+            display: none;
+        }
+
+        /* Mobile Menu Button */
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #0F2E26;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: white;
+            z-index: 1000;
+            padding: 80px 30px 30px;
+            transition: right 0.3s ease;
+            box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #1e4038;
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #e6f3ed;
+        }
+
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-menu a.active {
+            color: #0F2E26;
+            font-weight: 700;
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: #0F2E26;
+            cursor: pointer;
+        }
+
+        @media (min-width: 1024px) {
+            .logo img { height: 60px; }
+            .logo-text span { display: block; }
+            .nav-menu {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+            }
+            .nav-menu a {
+                text-decoration: none;
+                color: #1e4038;
+                font-weight: 500;
+                transition: color 0.3s;
+                font-size: 0.95rem;
+            }
+            .nav-menu a:hover, .nav-menu a.active {
+                color: #0F2E26;
+                font-weight: 600;
+            }
+            .menu-btn {
+                display: none;
+            }
+            .mobile-menu, .mobile-menu-overlay {
+                display: none !important;
+            }
+        }
+
+        /* Page Banner */
+        .page-banner {
+            padding: 40px 0 30px;
+            background: linear-gradient(135deg, #f4fcf9 0%, #e8f5ef 100%);
+        }
+
+        .banner-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .trust-badge i {
+            color: #FFD966;
+        }
+
+        /* Contact Grid - Form First */
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        /* Form Card - Appears first */
+        .form-card {
+            background: white;
+            border-radius: 40px;
+            padding: 40px 35px;
+            box-shadow: 0 30px 50px -30px #0F2E26;
+            border: 1px solid #e6f3ed;
+            order: 1;
+        }
+
+        .form-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #0F2E26;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e1f0e8;
+            border-radius: 20px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background: #f8fdfa;
+            font-family: "Inter", sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0F2E26;
+            background: white;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .form-submit {
+            background: #0F2E26;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 18px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .form-submit:hover:not(:disabled) {
+            background: #1a4a3a;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -8px #0F2E26;
+        }
+
+        .form-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .secure-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #5f7c73;
+        }
+
+        .secure-note i {
+            color: #0F2E26;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 30px;
+            border-radius: 30px;
+            margin-top: 20px;
+            text-align: center;
+            border: 2px solid #c3e6cb;
+        }
+
+        .success-message i {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .success-message h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #155724;
+        }
+
+        .success-message p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .success-message .btn-wa {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Contact Info Cards - Appears second */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 40px;
+            order: 2;
+        }
+
+        .info-card {
+            background: #f8fdfa;
+            border-radius: 30px;
+            padding: 30px;
+            border: 1px solid #e1f0e8;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -15px rgba(15,46,38,0.2);
+        }
+
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .info-icon i {
+            font-size: 2rem;
+            color: #0F2E26;
+        }
+
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #3a5e53;
+            margin-bottom: 5px;
+        }
+
+        .info-card .phone-large {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0F2E26;
+            margin: 10px 0;
+        }
+
+        .info-card .small-text {
+            color: #5f7c73;
+            font-size: 0.9rem;
+        }
+
+        .info-card .wa-link {
+            color: #25D366;
+            font-weight: 600;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        @media (min-width: 640px) {
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .contact-grid {
+                gap: 50px;
+            }
+            .info-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+            }
+        }
+
+        /* Customer Care Highlight */
+        .customer-care {
+            background: #f8fdfa;
+            border-radius: 30px;
+            padding: 25px;
+            margin-top: 30px;
+            order: 3;
+        }
+
+        .customer-care h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #0F2E26;
+        }
+
+        .customer-care a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0F2E26;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Map Section */
+        .map-section {
+            margin: 50px 0;
+        }
+
+        .map-container {
+            border-radius: 40px;
+            overflow: hidden;
+            height: 350px;
+            box-shadow: 0 25px 40px -20px #0F2E26;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Business Hours */
+        .hours-card {
+            background: #0F2E26;
+            color: white;
+            border-radius: 40px;
+            padding: 40px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .hours-card h3 {
+            color: #FFD966;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hours-item .day {
+            font-weight: 600;
+        }
+
+        .hours-item .time {
+            color: #FFD966;
+        }
+
+        .emergency-note {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px dashed rgba(255,255,255,0.3);
+        }
+
+        .emergency-note a {
+            color: #FFD966;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: #0F2E26;
+            border-radius: 50px;
+            padding: 50px 30px;
+            margin: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-banner h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-buttons a {
+            min-width: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .cta-buttons {
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a2620;
+            color: #e6f0ec;
+            border-radius: 40px 40px 0 0;
+            padding: 50px 0 30px;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .footer h4 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #FFD966;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        .footer-phone {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            display: block;
+            margin: 15px 0;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin: 12px 0;
+        }
+
+        .footer-links a {
+            color: #e6f0ec;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #FFD966;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 2fr 1fr 1fr 1.5fr;
+                gap: 60px;
+            }
+        }
+
+        /* Floating WhatsApp */
+        .floating-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 30px rgba(15,46,38,0.3);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        .floating-wa i {
+            font-size: 3rem;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        @media (min-width: 768px) {
+            .floating-wa {
+                width: 75px;
+                height: 75px;
+                bottom: 30px;
+                right: 30px;
+            }
+            .floating-wa i {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: #5f7c73;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: #0F2E26;
+        }
+
+        .breadcrumb span {
+            color: #0F2E26;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <div><i class="fas fa-map-marker-alt" style="color: #FFD966;"></i> Plot 39, 2nd Floor, MP Nagar Zone I, Bhopal</div>
+        <div class="top-contact">
+            <a href="tel:+919074167817"><i class="fas fa-phone-alt"></i> 9074167817</a>
+            <a href="tel:+919589396683">9589396683</a>
+            <a href="tel:+917987377586">7987377586</a>
+            <a href="tel:+919479927817"><i class="fas fa-headset"></i> 9479927817</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header with Logo -->
+<div class="main-header">
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html"><img src="https://i.ibb.co/nsbFDDpR/te-8.png" alt="Trupti Enterprises Logo"></a>
+            <div class="logo-text">
+                <h1><a href="index.html">TRUPTI ENTERPRISES</a></h1>
+                <span>Solar Excellence Since 2012</span>
+            </div>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Project Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="quote.html" class="active btn-outline" style="padding: 10px 25px;">Get Quote</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Project Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="quote.html" class="active" style="color: #0F2E26; font-weight: 700;">Get Quote</a>
+</div>
+
+<!-- Page Banner -->
+<section class="page-banner">
+    <div class="container banner-content">
+        <div class="trust-badge">
+            <i class="fas fa-star"></i> Get Your Free Solar Quote Today
+        </div>
+        <h1>Request a Quote</h1>
+        <p class="section-subhead" style="margin: 20px auto;">Fill in your details below and we'll get back to you within 2 hours with a customized quote for your solar needs.</p>
+    </div>
+</section>
+
+<div class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.7rem; color:#5f7c73;"></i> <span>Get a Quote</span>
+    </div>
+
+    <!-- Contact Section (identical to contact.html) -->
+    <div class="contact-section">
+        <div class="contact-grid">
+            <!-- FORM FIRST - Enquiry Form -->
+            <div class="form-card">
+                <h2>Get a Free Quote</h2>
+                <p style="margin-bottom: 30px;">Fill the form and we'll get back to you within 2 hours.</p>
+                
+                <form id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Your Location *</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., MP Nagar, Bhopal" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requirement">I'm interested in *</label>
+                        <select id="requirement" name="requirement" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Residential Rooftop Solar">Residential Rooftop Solar</option>
+                            <option value="Commercial Solar System">Commercial Solar System</option>
+                            <option value="Solar Water Pump">Solar Water Pump</option>
+                            <option value="Hybrid Solar System">Hybrid Solar System</option>
+                            <option value="Off-Grid Solar System">Off-Grid Solar System</option>
+                            <option value="Free Site Survey Only">Free Site Survey Only</option>
+                            <option value="Other / Not Sure">Other / Not Sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your electricity bill, roof type, or any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <i class="fab fa-whatsapp"></i> Submit & Get Quote
+                    </button>
+
+                    <div class="secure-note">
+                        <i class="fas fa-lock"></i> Your information is 100% secure. We never share your data.
+                    </div>
+                </form>
+
+                <!-- Success Message (hidden by default) -->
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your quote request has been submitted successfully. We'll contact you within 2 hours.</p>
+                    <a href="https://wa.me/919479927817" class="btn-wa" target="_blank" style="display: inline-block; padding: 12px 25px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info Cards -->
+            <div class="info-grid">
+                <!-- Phone Card -->
+                <a href="tel:+919074167817" class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <div class="phone-large">9074167817</div>
+                    <p>9589396683 | 7987377586</p>
+                    <p class="small-text">Mon-Sat, 9am-7pm</p>
+                </a>
+
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/919479927817" class="info-card" target="_blank">
+                    <div class="info-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <div class="phone-large">9479927817</div>
+                    <p class="wa-link">Click to chat instantly</p>
+                    <p class="small-text">24/7 quick response</p>
+                </a>
+
+                <!-- Email Card -->
+                <a href="mailto:contact@truptisolar.in" class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p style="font-size: 1.2rem; font-weight: 600;">contact@truptisolar.in</p>
+                    <p>info@truptisolar.in</p>
+                    <p class="small-text">Response within 2 hours</p>
+                </a>
+
+                <!-- Location Card -->
+                <a href="https://maps.google.com/?q=Plot+No+39+2nd+Floor+MP+Nagar+Zone+I+Bhopal" class="info-card" target="_blank">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p><strong>Plot No. 39, 2nd Floor</strong></p>
+                    <p>MP Nagar Zone I, Bhopal</p>
+                    <p>Madhya Pradesh - 462011</p>
+                    <p class="small-text">Click to open map</p>
+                </a>
+            </div>
+
+            <!-- Customer Care Highlight -->
+            <div class="customer-care">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <i class="fas fa-headset" style="font-size: 2.5rem; color: #0F2E26;"></i>
+                    <div>
+                        <h4>Dedicated Customer Care</h4>
+                        <p style="color: #3a5e53;">For existing customers and support</p>
+                        <a href="tel:+919479927817">9479927817</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <h2 style="text-align: center;">Visit Our Office</h2>
+        <p class="section-subhead" style="text-align: center;">Plot No. 39, 2nd Floor, MP Nagar Zone I, Bhopal</p>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.238307306814!2d77.4123!3d23.2325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4265b4b3c1b5%3A0x9b5c5e5c5e5c5e5c!2sMP%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Business Hours -->
+    <div class="hours-card">
+        <h3>Business Hours</h3>
+        <div class="hours-grid">
+            <div class="hours-item">
+                <span class="day">Monday - Saturday</span>
+                <span class="time">9:00 AM - 7:00 PM</span>
+            </div>
+            <div class="hours-item">
+                <span class="day">Sunday</span>
+                <span class="time">Closed</span>
+            </div>
+            <div class="hours-item">
+                <span class="day">Public Holidays</span>
+                <span class="time">Emergency Support Only</span>
+            </div>
+        </div>
+        
+        <div class="emergency-note">
+            <p style="font-size: 1.2rem;">📞 For Emergency Support</p>
+            <a href="tel:+919479927817"><i class="fas fa-phone-alt"></i> 9479927817 (24/7)</a>
+            <br>
+            <a href="https://wa.me/919479927817" style="margin-top: 10px; display: inline-block;"><i class="fab fa-whatsapp"></i> WhatsApp Emergency</a>
+        </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+        <h2>Ready to Go Solar?</h2>
+        <p style="font-size:1.2rem; margin-bottom: 30px; opacity:0.9;">Join 500+ happy families saving money with clean energy.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/919479927817?text=Hello%20Trupti%20Enterprises%2C%20I%20want%20to%20book%20a%20FREE%20Site%20Survey." class="btn-primary" style="background:#FFD966; color:#0F2E26;" target="_blank"><i class="fab fa-whatsapp"></i> Book Free Survey</a>
+            <a href="quote.html" class="btn-wa"><i class="fab fa-whatsapp"></i> Get Quote</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>TRUPTI ENTERPRISES</h4>
+            <p><i class="fas fa-map-marker-alt" style="color: #FFD966;"></i> Plot No. 39, 2nd Floor, MP Nagar Zone I, Bhopal - 462011</p>
+            <p><i class="fas fa-envelope" style="color: #FFD966;"></i> contact@truptisolar.in</p>
+            <span class="footer-phone">9074167817</span>
+            <p>9589396683 | 7987377586</p>
+            <p><i class="fab fa-whatsapp" style="color: #FFD966;"></i> Customer Care: 9479927817</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Project Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="quote.html">Get Quote</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+                <li><a href="services.html#residential">Residential Solar</a></li>
+                <li><a href="services.html#commercial">Commercial Solar</a></li>
+                <li><a href="services.html#pump">Solar Water Pumps</a></li>
+                <li><a href="services.html#hybrid">Hybrid Systems</a></li>
+                <li><a href="services.html#offgrid">Off-Grid Systems</a></li>
+                <li><a href="services.html#survey">Site Survey</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Business Hours</h4>
+            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+            <p>Sunday: Closed (Emergency Support)</p>
+            <p><a href="https://maps.google.com/?q=Plot+No+39+2nd+Floor+MP+Nagar+Zone+I+Bhopal" target="_blank"><i class="fas fa-map"></i> Open in Google Maps</a></p>
+            <p style="margin-top:20px;">SSL Secured <i class="fas fa-lock"></i></p>
+            <p>© 2025 Trupti Enterprises</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919479927817?text=Hello%20Trupti%20Enterprises%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20know%20more." class="floating-wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function openMenu() {
+        mobileMenu.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenuFunc() {
+        mobileMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFunc);
+    menuOverlay.addEventListener('click', closeMenuFunc);
+</script>
+
+<!-- Form Submission Script - Same as contact.html -->
+<script>
+    // Google Apps Script Web App URL - YOUR DEPLOYMENT URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzUi2q0T_RbZ45SbVp1-SaM0QDTAw8RYptTebwq44J5PgmmRKsO8RuTiqVcNyszxZxeVw/exec';
+
+    const quoteForm = document.getElementById('quoteForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMessage = document.getElementById('successMessage');
+
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Disable button to prevent double submission
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                location: document.getElementById('location').value,
+                requirement: document.getElementById('requirement').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Also prepare WhatsApp message as backup
+            const whatsappMessage = `*New Quote Request from Website*
+*Name:* ${formData.name}
+*Phone:* ${formData.phone}
+*Location:* ${formData.location}
+*Requirement:* ${formData.requirement}
+*Message:* ${formData.message || 'Not provided'}`;
+            
+            try {
+                // Send data to Google Sheets
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Required for Google Apps Script
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                // Hide form and show success message
+                quoteForm.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+                // Optional: Also open WhatsApp as backup (uncomment if you want both)
+                // window.open(`https://wa.me/919479927817?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                
+                // If Google Sheets fails, offer WhatsApp as backup
+                const userWantsWhatsApp = confirm('There was an error submitting the form. Would you like to send your enquiry via WhatsApp instead?');
+                
+                if (userWantsWhatsApp) {
+                    window.open(`https://wa.me/919479927817?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                    
+                    // Hide form and show success message anyway
+                    quoteForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                } else {
+                    // Re-enable button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Submit & Get Quote';
+                }
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
