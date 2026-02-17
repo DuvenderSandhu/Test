@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Contact Us | Trupti Enterprises - Get Solar Quote Bhopal</title>
+    <title>Contact Us | Trupti Enterprises - Solar Installation Bhopal</title>
     <!-- SEO Meta -->
     <meta name="description" content="Contact Trupti Enterprises for solar installation in Bhopal. Get a free quote, site survey, and expert consultation. Call or WhatsApp us today.">
     <!-- Fonts & Icons -->
@@ -200,6 +200,11 @@
             line-height: 1.2;
         }
 
+        .logo-text h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         .logo-text span {
             font-size: 0.75rem;
             color: #5f7c73;
@@ -343,7 +348,7 @@
             color: #FFD966;
         }
 
-        /* Contact Grid */
+        /* Contact Grid - Updated to put form first */
         .contact-section {
             padding: 50px 0;
         }
@@ -354,95 +359,14 @@
             gap: 40px;
         }
 
-        /* Contact Info Cards */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            margin-bottom: 30px;
-        }
-
-        .info-card {
-            background: #f8fdfa;
-            border-radius: 30px;
-            padding: 30px;
-            border: 1px solid #e1f0e8;
-            transition: transform 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .info-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 30px -15px rgba(15,46,38,0.2);
-        }
-
-        .info-icon {
-            width: 60px;
-            height: 60px;
-            background: white;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .info-icon i {
-            font-size: 2rem;
-            color: #0F2E26;
-        }
-
-        .info-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .info-card p {
-            color: #3a5e53;
-            margin-bottom: 5px;
-        }
-
-        .info-card .phone-large {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0F2E26;
-            margin: 10px 0;
-        }
-
-        .info-card .small-text {
-            color: #5f7c73;
-            font-size: 0.9rem;
-        }
-
-        .info-card .wa-link {
-            color: #25D366;
-            font-weight: 600;
-            margin-top: 10px;
-            display: inline-block;
-        }
-
-        @media (min-width: 640px) {
-            .info-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .info-grid {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 25px;
-            }
-        }
-
-        /* Enquiry Form */
+        /* Form Card - Now appears first */
         .form-card {
             background: white;
             border-radius: 40px;
             padding: 40px 35px;
             box-shadow: 0 30px 50px -30px #0F2E26;
             border: 1px solid #e6f3ed;
+            order: 1;
         }
 
         .form-card h2 {
@@ -515,10 +439,15 @@
             gap: 10px;
         }
 
-        .form-submit:hover {
+        .form-submit:hover:not(:disabled) {
             background: #1a4a3a;
             transform: translateY(-2px);
             box-shadow: 0 15px 30px -8px #0F2E26;
+        }
+
+        .form-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
         }
 
         .secure-note {
@@ -530,6 +459,150 @@
 
         .secure-note i {
             color: #0F2E26;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 30px;
+            border-radius: 30px;
+            margin-top: 20px;
+            text-align: center;
+            border: 2px solid #c3e6cb;
+        }
+
+        .success-message i {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .success-message h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #155724;
+        }
+
+        .success-message p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .success-message .btn-wa {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Contact Info Cards - Now appears second */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 40px;
+            order: 2;
+        }
+
+        .info-card {
+            background: #f8fdfa;
+            border-radius: 30px;
+            padding: 30px;
+            border: 1px solid #e1f0e8;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -15px rgba(15,46,38,0.2);
+        }
+
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .info-icon i {
+            font-size: 2rem;
+            color: #0F2E26;
+        }
+
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #3a5e53;
+            margin-bottom: 5px;
+        }
+
+        .info-card .phone-large {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0F2E26;
+            margin: 10px 0;
+        }
+
+        .info-card .small-text {
+            color: #5f7c73;
+            font-size: 0.9rem;
+        }
+
+        .info-card .wa-link {
+            color: #25D366;
+            font-weight: 600;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        @media (min-width: 640px) {
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .contact-grid {
+                gap: 50px;
+            }
+            .info-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+            }
+        }
+
+        /* Customer Care Highlight */
+        .customer-care {
+            background: #f8fdfa;
+            border-radius: 30px;
+            padding: 25px;
+            margin-top: 30px;
+            order: 3;
+        }
+
+        .customer-care h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #0F2E26;
+        }
+
+        .customer-care a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0F2E26;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
         }
 
         /* Map Section */
@@ -792,7 +865,7 @@
         <div class="logo">
             <a href="index.html"><img src="https://i.ibb.co/nsbFDDpR/te-8.png" alt="Trupti Enterprises Logo"></a>
             <div class="logo-text">
-                <h1><a href="index.html" style="text-decoration: none; color: inherit;">TRUPTI ENTERPRISES</a></h1>
+                <h1><a href="index.html">TRUPTI ENTERPRISES</a></h1>
                 <span>Solar Excellence Since 2012</span>
             </div>
         </div>
@@ -844,77 +917,12 @@
     <!-- Contact Section -->
     <div class="contact-section">
         <div class="contact-grid">
-            <!-- Left Side - Contact Info -->
-            <div>
-                <h2>Get in Touch</h2>
-                <p class="section-subhead" style="margin-bottom: 30px;">We're here to answer your questions and help you go solar.</p>
-                
-                <div class="info-grid">
-                    <!-- Phone Card -->
-                    <a href="tel:+919074167817" class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Call Us</h3>
-                        <div class="phone-large">9074167817</div>
-                        <p>9589396683 | 7987377586</p>
-                        <p class="small-text">Mon-Sat, 9am-7pm</p>
-                    </a>
-
-                    <!-- WhatsApp Card -->
-                    <a href="https://wa.me/919479927817" class="info-card" target="_blank">
-                        <div class="info-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <div class="phone-large">9479927817</div>
-                        <p class="wa-link">Click to chat instantly</p>
-                        <p class="small-text">24/7 quick response</p>
-                    </a>
-
-                    <!-- Email Card -->
-                    <a href="mailto:contact@truptisolar.in" class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email Us</h3>
-                        <p style="font-size: 1.2rem; font-weight: 600;">contact@truptisolar.in</p>
-                        <p>info@truptisolar.in</p>
-                        <p class="small-text">Response within 2 hours</p>
-                    </a>
-
-                    <!-- Location Card -->
-                    <a href="https://maps.google.com/?q=Plot+No+39+2nd+Floor+MP+Nagar+Zone+I+Bhopal" class="info-card" target="_blank">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Visit Us</h3>
-                        <p><strong>Plot No. 39, 2nd Floor</strong></p>
-                        <p>MP Nagar Zone I, Bhopal</p>
-                        <p>Madhya Pradesh - 462011</p>
-                        <p class="small-text">Click to open map</p>
-                    </a>
-                </div>
-
-                <!-- Customer Care Highlight -->
-                <div style="background: #f8fdfa; border-radius: 30px; padding: 25px; margin-top: 20px;">
-                    <div style="display: flex; align-items: center; gap: 15px;">
-                        <i class="fas fa-headset" style="font-size: 2.5rem; color: #0F2E26;"></i>
-                        <div>
-                            <h4 style="font-size: 1.3rem;">Dedicated Customer Care</h4>
-                            <p style="color: #3a5e53;">For existing customers and support</p>
-                            <a href="tel:+919479927817" style="font-size: 1.5rem; font-weight: 700; color: #0F2E26; text-decoration: none;">9479927817</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side - Enquiry Form -->
+            <!-- FORM FIRST - Enquiry Form (Now appears at the top) -->
             <div class="form-card">
                 <h2>Get a Free Quote</h2>
                 <p style="margin-bottom: 30px;">Fill the form and we'll get back to you within 2 hours.</p>
                 
-                <form action="#" method="POST">
+                <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -935,13 +943,13 @@
                         <label for="requirement">I'm interested in *</label>
                         <select id="requirement" name="requirement" required>
                             <option value="" disabled selected>Select a service</option>
-                            <option value="residential">Residential Rooftop Solar</option>
-                            <option value="commercial">Commercial Solar System</option>
-                            <option value="pump">Solar Water Pump</option>
-                            <option value="hybrid">Hybrid Solar System</option>
-                            <option value="offgrid">Off-Grid Solar System</option>
-                            <option value="survey">Free Site Survey Only</option>
-                            <option value="other">Other / Not Sure</option>
+                            <option value="Residential Rooftop Solar">Residential Rooftop Solar</option>
+                            <option value="Commercial Solar System">Commercial Solar System</option>
+                            <option value="Solar Water Pump">Solar Water Pump</option>
+                            <option value="Hybrid Solar System">Hybrid Solar System</option>
+                            <option value="Off-Grid Solar System">Off-Grid Solar System</option>
+                            <option value="Free Site Survey Only">Free Site Survey Only</option>
+                            <option value="Other / Not Sure">Other / Not Sure</option>
                         </select>
                     </div>
 
@@ -950,8 +958,8 @@
                         <textarea id="message" name="message" placeholder="Tell us about your electricity bill, roof type, or any specific requirements..."></textarea>
                     </div>
 
-                    <button type="submit" class="form-submit">
-                        <i class="fab fa-whatsapp"></i> Submit & Get Quote on WhatsApp
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <i class="fab fa-whatsapp"></i> Submit & Get Quote
                     </button>
 
                     <div class="secure-note">
@@ -959,10 +967,74 @@
                     </div>
                 </form>
 
-                <!-- Quick Contact Options -->
-                <div style="display: flex; gap: 15px; justify-content: center; margin-top: 25px;">
-                    <a href="https://wa.me/919479927817" class="btn-wa" style="padding: 12px 20px;" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    <a href="tel:+919074167817" class="btn-outline" style="padding: 12px 20px;">Call Now</a>
+                <!-- Success Message (hidden by default) -->
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your enquiry has been submitted successfully. We'll contact you within 2 hours.</p>
+                    <a href="https://wa.me/919479927817" class="btn-wa" target="_blank" style="display: inline-block; padding: 12px 25px;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info Cards (Now appears after the form) -->
+            <div class="info-grid">
+                <!-- Phone Card -->
+                <a href="tel:+919074167817" class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <div class="phone-large">9074167817</div>
+                    <p>9589396683 | 7987377586</p>
+                    <p class="small-text">Mon-Sat, 9am-7pm</p>
+                </a>
+
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/919479927817" class="info-card" target="_blank">
+                    <div class="info-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <div class="phone-large">9479927817</div>
+                    <p class="wa-link">Click to chat instantly</p>
+                    <p class="small-text">24/7 quick response</p>
+                </a>
+
+                <!-- Email Card -->
+                <a href="mailto:contact@truptisolar.in" class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p style="font-size: 1.2rem; font-weight: 600;">contact@truptisolar.in</p>
+                    <p>info@truptisolar.in</p>
+                    <p class="small-text">Response within 2 hours</p>
+                </a>
+
+                <!-- Location Card -->
+                <a href="https://maps.google.com/?q=Plot+No+39+2nd+Floor+MP+Nagar+Zone+I+Bhopal" class="info-card" target="_blank">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p><strong>Plot No. 39, 2nd Floor</strong></p>
+                    <p>MP Nagar Zone I, Bhopal</p>
+                    <p>Madhya Pradesh - 462011</p>
+                    <p class="small-text">Click to open map</p>
+                </a>
+            </div>
+
+            <!-- Customer Care Highlight -->
+            <div class="customer-care">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <i class="fas fa-headset" style="font-size: 2.5rem; color: #0F2E26;"></i>
+                    <div>
+                        <h4>Dedicated Customer Care</h4>
+                        <p style="color: #3a5e53;">For existing customers and support</p>
+                        <a href="tel:+919479927817">9479927817</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1010,7 +1082,7 @@
         <p style="font-size:1.2rem; margin-bottom: 30px; opacity:0.9;">Join 500+ happy families saving money with clean energy.</p>
         <div class="cta-buttons">
             <a href="https://wa.me/919479927817?text=Hello%20Trupti%20Enterprises%2C%20I%20want%20to%20book%20a%20FREE%20Site%20Survey." class="btn-primary" style="background:#FFD966; color:#0F2E26;" target="_blank"><i class="fab fa-whatsapp"></i> Book Free Survey</a>
-            <a href="quote.html" class="btn-outline" style="border-color:white; color:white;">Get Quote Online</a>
+            <a href="quote.html" class="btn-wa"><i class="fab fa-whatsapp"></i> Get Quote</a>
         </div>
     </div>
 </div>
@@ -1086,37 +1158,80 @@
     menuBtn.addEventListener('click', openMenu);
     closeMenu.addEventListener('click', closeMenuFunc);
     menuOverlay.addEventListener('click', closeMenuFunc);
+</script>
 
-    // Form submission to WhatsApp
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const location = document.getElementById('location').value;
-        const requirement = document.getElementById('requirement').value;
-        const message = document.getElementById('message').value;
-        
-        const requirementText = {
-            'residential': 'Residential Rooftop Solar',
-            'commercial': 'Commercial Solar System',
-            'pump': 'Solar Water Pump',
-            'hybrid': 'Hybrid Solar System',
-            'offgrid': 'Off-Grid Solar System',
-            'survey': 'Free Site Survey Only',
-            'other': 'Other / Not Sure'
-        }[requirement] || requirement;
-        
-        const whatsappMessage = `*New Enquiry from Website*
-*Name:* ${name}
-*Phone:* ${phone}
-*Location:* ${location}
-*Requirement:* ${requirementText}
-*Message:* ${message || 'Not provided'}`;
-        
-        window.open(`https://wa.me/919479927817?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
-    });
+<!-- Form Submission Script -->
+<script>
+    // Google Apps Script Web App URL - YOUR DEPLOYMENT URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzUi2q0T_RbZ45SbVp1-SaM0QDTAw8RYptTebwq44J5PgmmRKsO8RuTiqVcNyszxZxeVw/exec';
+
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successMessage = document.getElementById('successMessage');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Disable button to prevent double submission
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                location: document.getElementById('location').value,
+                requirement: document.getElementById('requirement').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Also prepare WhatsApp message as backup
+            const whatsappMessage = `*New Enquiry from Website*
+*Name:* ${formData.name}
+*Phone:* ${formData.phone}
+*Location:* ${formData.location}
+*Requirement:* ${formData.requirement}
+*Message:* ${formData.message || 'Not provided'}`;
+            
+            try {
+                // Send data to Google Sheets
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Required for Google Apps Script
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                // Hide form and show success message
+                contactForm.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+                // Optional: Also open WhatsApp as backup (uncomment if you want both)
+                // window.open(`https://wa.me/919479927817?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                
+                // If Google Sheets fails, offer WhatsApp as backup
+                const userWantsWhatsApp = confirm('There was an error submitting the form. Would you like to send your enquiry via WhatsApp instead?');
+                
+                if (userWantsWhatsApp) {
+                    window.open(`https://wa.me/919479927817?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                    
+                    // Hide form and show success message anyway
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                } else {
+                    // Re-enable button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Submit & Get Quote';
+                }
+            }
+        });
+    }
 </script>
 
 </body>
