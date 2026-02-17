@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Trupti Enterprises | Trusted Solar Installer Bhopal Since 2012</title>
+    <title>Trupti Enterprises | Best Solar Installation in Bhopal - Since 2012</title>
     <!-- SEO Meta -->
-    <meta name="description" content="Trupti Enterprises: Bhopal's most awarded solar installation company. 500+ happy clients, 12+ years experience, 25-year warranty. Free site survey & expert subsidy guidance. Get a free quote today.">
+    <meta name="description" content="Trupti Enterprises offers professional solar installation in Bhopal: rooftop, commercial, solar pumps, hybrid & off-grid systems. Free site survey & subsidy guidance. 500+ happy customers.">
+    <meta name="keywords" content="solar installation Bhopal, rooftop solar, solar water pump, hybrid solar system, off-grid solar, solar company MP Nagar">
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,6 +46,12 @@
             letter-spacing: -0.02em;
         }
 
+        h1 {
+            font-size: 2.2rem;
+            color: #0F2E26;
+            line-height: 1.2;
+        }
+
         h2 {
             font-size: 2rem;
             color: #0F2E26;
@@ -52,15 +59,24 @@
         }
 
         @media (min-width: 768px) {
+            h1 { font-size: 2.8rem; }
             h2 { font-size: 2.5rem; }
         }
 
         @media (min-width: 1024px) {
+            h1 { font-size: 3.2rem; }
             h2 { font-size: 3rem; }
         }
 
+        .section-subhead {
+            font-size: 1.1rem;
+            color: #5f7c73;
+            max-width: 800px;
+            margin-bottom: 2.5rem;
+        }
+
         /* Buttons */
-        .btn-primary, .btn-secondary, .btn-outline {
+        .btn-primary, .btn-outline, .btn-wa {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -73,13 +89,6 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            width: 100%;
-        }
-
-        @media (min-width: 480px) {
-            .btn-primary, .btn-secondary, .btn-outline {
-                width: auto;
-            }
         }
 
         .btn-primary {
@@ -94,16 +103,6 @@
             box-shadow: 0 15px 30px -8px #0F2E26;
         }
 
-        .btn-secondary {
-            background: #FFD966;
-            color: #0F2E26;
-        }
-
-        .btn-secondary:hover {
-            background: #f5c542;
-            transform: translateY(-2px);
-        }
-
         .btn-outline {
             background: transparent;
             color: #0F2E26;
@@ -113,6 +112,17 @@
         .btn-outline:hover {
             background: #0F2E26;
             color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-wa {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-wa:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
         }
 
         /* Top Bar */
@@ -191,20 +201,94 @@
             line-height: 1.2;
         }
 
+        .logo-text h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         .logo-text span {
             font-size: 0.75rem;
             color: #5f7c73;
             display: none;
         }
 
+        /* Desktop Navigation */
         .nav-menu {
             display: none;
         }
 
+        /* Mobile Menu Button */
         .menu-btn {
             background: none;
             border: none;
             font-size: 2rem;
+            color: #0F2E26;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background: white;
+            z-index: 1000;
+            padding: 80px 30px 30px;
+            transition: right 0.3s ease;
+            box-shadow: -5px 0 30px rgba(0,0,0,0.1);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: #1e4038;
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #e6f3ed;
+        }
+
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-menu a.active {
+            color: #0F2E26;
+            font-weight: 700;
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            background: none;
+            border: none;
             color: #0F2E26;
             cursor: pointer;
         }
@@ -222,60 +306,57 @@
                 color: #1e4038;
                 font-weight: 500;
                 transition: color 0.3s;
+                font-size: 0.95rem;
             }
-            .nav-menu a:hover {
+            .nav-menu a:hover, .nav-menu a.active {
                 color: #0F2E26;
+                font-weight: 600;
             }
             .menu-btn {
                 display: none;
+            }
+            .mobile-menu, .mobile-menu-overlay {
+                display: none !important;
             }
         }
 
         /* Hero Section */
         .hero {
-            padding: 30px 0 40px;
+            padding: 40px 0 60px;
             background: linear-gradient(135deg, #f4fcf9 0%, #e8f5ef 100%);
         }
 
         .hero-grid {
             display: grid;
-            gap: 30px;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
         }
 
         .hero h2 {
-            font-size: 2.2rem;
-        }
-
-        .trust-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: white;
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-        }
-
-        .trust-badge i {
-            color: #FFD966;
+            font-size: 2.5rem;
+            line-height: 1.1;
+            color: #0F2E26;
         }
 
         .hero-highlight {
             background: white;
+            padding: 20px 25px;
             border-radius: 30px;
-            padding: 20px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 15px 30px -15px rgba(15,46,38,0.2);
             margin: 25px 0;
-            box-shadow: 0 15px 30px -15px rgba(15,46,38,0.1);
+            border-left: 6px solid #FFD966;
+            width: 100%;
         }
 
         .hero-highlight-item {
             display: flex;
             align-items: center;
             gap: 15px;
-            margin: 15px 0;
         }
 
         .hero-highlight-item i {
@@ -284,10 +365,10 @@
         }
 
         .hero-image {
-            height: 250px;
-            border-radius: 30px;
+            height: 300px;
+            border-radius: 40px;
             overflow: hidden;
-            box-shadow: 0 30px 40px -20px #0F2E26;
+            box-shadow: 0 30px 50px -25px #0F2E26;
         }
 
         .hero-image img {
@@ -309,20 +390,49 @@
             color: #0F2E26;
         }
 
+        .stats-mini p {
+            font-size: 0.9rem;
+            color: #5f7c73;
+        }
+
         @media (min-width: 768px) {
             .hero h2 { font-size: 3rem; }
-            .hero-image { height: 350px; }
+            .hero-image { height: 400px; }
+            .hero-highlight {
+                flex-direction: row;
+                align-items: center;
+                padding: 20px 30px;
+            }
         }
 
         @media (min-width: 1024px) {
             .hero-grid {
                 grid-template-columns: 1.1fr 0.9fr;
-                gap: 50px;
+                gap: 60px;
             }
+            .hero h2 { font-size: 3.5rem; }
             .hero-image { height: 500px; }
         }
 
-        /* Trust Logos Strip */
+        /* Trust Badge */
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .trust-badge i {
+            color: #FFD966;
+        }
+
+        /* Trust Strip */
         .trust-strip {
             background: white;
             padding: 25px 0;
@@ -354,33 +464,49 @@
         .services-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
-            margin: 40px 0;
+            gap: 25px;
+            margin: 50px 0;
         }
 
         .service-card {
             background: white;
             border-radius: 30px;
             padding: 35px 25px;
-            box-shadow: 0 15px 35px -20px rgba(15,46,38,0.1);
+            box-shadow: 0 20px 40px -20px rgba(15,46,38,0.15);
             border: 1px solid #e6f3ed;
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
             text-align: center;
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 25px 45px -20px #0F2E26;
+            box-shadow: 0 30px 50px -20px #0F2E26;
+            border-color: #c5e3d8;
         }
 
-        .service-icon svg {
-            width: 70px;
-            height: 70px;
+        .service-icon {
+            font-size: 2.5rem;
+            color: #0F2E26;
             margin-bottom: 20px;
         }
 
-        .service-icon svg path {
-            fill: #0F2E26;
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #3a5e53;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: #0F2E26;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         @media (min-width: 640px) {
@@ -396,12 +522,12 @@
             }
         }
 
-        /* Why Choose Us with Icons */
+        /* Why Choose Us */
         .why-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
-            margin: 40px 0;
+            gap: 25px;
+            margin: 50px 0;
         }
 
         .why-card {
@@ -409,16 +535,26 @@
             border-radius: 30px;
             padding: 35px 25px;
             border: 1px solid #e1f0e8;
+            transition: transform 0.3s;
         }
 
-        .why-card svg {
-            width: 60px;
-            height: 60px;
+        .why-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            color: #0F2E26;
             margin-bottom: 20px;
         }
 
-        .why-card svg path {
-            fill: #0F2E26;
+        .why-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .why-card p {
+            color: #3a5e53;
         }
 
         @media (min-width: 640px) {
@@ -430,24 +566,26 @@
         @media (min-width: 1024px) {
             .why-grid {
                 grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
             }
         }
 
         /* Stats Banner */
         .stats-banner {
             background: #0F2E26;
-            border-radius: 40px;
-            padding: 40px 20px;
-            margin: 50px 0;
+            border-radius: 60px;
+            padding: 50px 30px;
+            margin: 60px 0;
+            color: white;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            gap: 30px;
             text-align: center;
-            color: white;
         }
 
-        .stats-banner h3 {
-            font-size: 2.2rem;
+        .stat-large {
+            font-size: 2.5rem;
+            font-weight: 800;
             color: #FFD966;
             margin-bottom: 5px;
         }
@@ -455,148 +593,41 @@
         @media (min-width: 768px) {
             .stats-banner {
                 grid-template-columns: repeat(4, 1fr);
-                padding: 50px 40px;
-                border-radius: 60px;
+                padding: 60px 40px;
+            }
+            .stat-large {
+                font-size: 3rem;
             }
         }
 
-        /* Form Section - Lead Generation */
-        .form-section {
-            background: linear-gradient(135deg, #f4fcf9 0%, #e8f5ef 100%);
-            border-radius: 40px;
-            padding: 40px 25px;
-            margin: 50px 0;
-        }
-
-        .form-grid {
-            display: grid;
-            gap: 30px;
-        }
-
-        .form-content h3 {
-            font-size: 1.8rem;
-            color: #0F2E26;
-            margin-bottom: 15px;
-        }
-
-        .benefit-list {
-            margin: 25px 0;
-        }
-
-        .benefit-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin: 15px 0;
-            font-weight: 500;
-        }
-
-        .benefit-item i {
-            color: #0F2E26;
-            font-size: 1.3rem;
-        }
-
-        .lead-form {
-            background: white;
-            padding: 30px 25px;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px -20px #0F2E26;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #0F2E26;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 16px 18px;
-            border: 2px solid #e1f0e8;
-            border-radius: 16px;
-            font-size: 1rem;
-            transition: border 0.3s;
-            background: #f8fdfa;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #0F2E26;
-        }
-
-        .form-group textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
-
-        .form-submit {
-            background: #0F2E26;
-            color: white;
-            border: none;
-            width: 100%;
-            padding: 18px;
-            border-radius: 60px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .form-submit:hover {
-            background: #1a4a3a;
-        }
-
-        .secure-note {
-            text-align: center;
-            margin-top: 15px;
-            font-size: 0.85rem;
-            color: #5f7c73;
-        }
-
-        .secure-note i {
-            color: #0F2E26;
-        }
-
-        @media (min-width: 1024px) {
-            .form-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 50px;
-                align-items: center;
-            }
-        }
-
-        /* Gallery */
-        .gallery-grid {
+        /* Gallery Preview */
+        .gallery-preview {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 25px;
             margin: 40px 0;
         }
 
-        .gallery-item {
+        .preview-item {
             border-radius: 30px;
             overflow: hidden;
+            height: 250px;
             position: relative;
-            height: 280px;
             box-shadow: 0 20px 30px -15px #0F2E26;
         }
 
-        .gallery-item img {
+        .preview-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.5s;
         }
 
-        .gallery-overlay {
+        .preview-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .preview-overlay {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -606,106 +637,99 @@
             padding: 25px;
         }
 
-        .gallery-overlay h4 {
+        .preview-overlay h4 {
             color: #FFD966;
             margin-bottom: 5px;
         }
 
         @media (min-width: 768px) {
-            .gallery-grid {
+            .gallery-preview {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        /* Testimonials */
+        /* Testimonial */
         .testimonial-card {
             background: white;
-            border-radius: 30px;
-            padding: 35px;
-            margin: 30px 0;
-            box-shadow: 0 20px 40px -20px rgba(15,46,38,0.1);
+            border-radius: 40px;
+            padding: 40px 35px;
+            margin: 50px 0;
+            box-shadow: 0 25px 50px -25px #0F2E26;
             border: 1px solid #e6f3ed;
         }
 
         .stars {
             color: #FFD966;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 25px;
+            color: #1e2e2a;
         }
 
         .testimonial-author {
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-top: 20px;
         }
 
         .author-icon {
-            width: 50px;
-            height: 50px;
-            background: #e6f3ed;
+            width: 60px;
+            height: 60px;
+            background: #f0f9f5;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.8rem;
             color: #0F2E26;
             font-weight: 700;
         }
 
-        /* CTA Section */
-        .cta-section {
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            color: #5f7c73;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
             background: #0F2E26;
-            border-radius: 40px;
+            border-radius: 60px;
             padding: 50px 30px;
-            margin: 50px 0;
+            margin: 60px 0;
             color: white;
             text-align: center;
         }
 
-        .cta-section h2 {
+        .cta-banner h2 {
             color: white;
+            margin-bottom: 20px;
         }
 
         .cta-buttons {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            margin-top: 25px;
+            justify-content: center;
+            align-items: center;
         }
 
-        .cta-wa {
-            background: #25D366;
-            color: white;
-            padding: 18px;
-            border-radius: 60px;
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .cta-call {
-            background: #FFD966;
-            color: #0F2E26;
-            padding: 18px;
-            border-radius: 60px;
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+        .cta-buttons a {
+            min-width: 250px;
         }
 
         @media (min-width: 768px) {
             .cta-buttons {
                 flex-direction: row;
-                justify-content: center;
-            }
-            .cta-wa, .cta-call {
-                padding: 18px 40px;
+                gap: 20px;
             }
         }
 
@@ -733,6 +757,11 @@
         .footer a {
             color: #FFD966;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: white;
         }
 
         .footer-phone {
@@ -741,6 +770,24 @@
             color: white;
             display: block;
             margin: 15px 0;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin: 12px 0;
+        }
+
+        .footer-links a {
+            color: #e6f0ec;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #FFD966;
         }
 
         @media (min-width: 768px) {
@@ -771,6 +818,7 @@
             box-shadow: 0 15px 30px rgba(15,46,38,0.3);
             z-index: 1000;
             animation: pulse 2s infinite;
+            text-decoration: none;
         }
 
         .floating-wa i {
@@ -795,30 +843,330 @@
                 font-size: 3.5rem;
             }
         }
+    </style>
+</head>
+<body>
 
-        /* SVG Styles */
-        .svg-icon {
-            width: 60px;
-            height: 60px;
-            display: inline-block;
-        }
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <div><i class="fas fa-map-marker-alt" style="color: #FFD966;"></i> Plot 39, 2nd Floor, MP Nagar Zone I, Bhopal</div>
+        <div class="top-contact">
+            <a href="tel:+919074167817"><i class="fas fa-phone-alt"></i> 9074167817</a>
+            <a href="tel:+919589396683">9589396683</a>
+            <a href="tel:+917987377586">7987377586</a>
+            <a href="tel:+919479927817"><i class="fas fa-headset"></i> 9479927817</a>
+        </div>
+    </div>
+</div>
 
-        .svg-icon path {
-            fill: currentColor;
-        }
+<!-- Header with Logo -->
+<div class="main-header">
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html"><img src="https://i.ibb.co/nsbFDDpR/te-8.png" alt="Trupti Enterprises Logo"></a>
+            <div class="logo-text">
+                <h1><a href="index.html">TRUPTI ENTERPRISES</a></h1>
+                <span>Solar Excellence Since 2012</span>
+            </div>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Project Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="quote.html" class="btn-outline" style="padding: 10px 25px;">Get Quote</a>
+        </div>
 
-        /* Trust Badges */
-        .trustbadge-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
+        <!-- Mobile Menu Button -->
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+</div>
 
-        .trustbadge {
-            background: white;
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.9rem;
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Project Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="quote.html" style="color: #0F2E26; font-weight: 700;">Get Quote</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <div class="trust-badge">
+                <i class="fas fa-star"></i> Bhopal's Most Trusted Solar Installer
+            </div>
+            <h2>Power Your Future with Clean Solar Energy</h2>
+            
+            <div class="hero-highlight">
+                <div class="hero-highlight-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <div><strong>Free Site Survey</strong> - Engineer visits your home</div>
+                </div>
+                <div class="hero-highlight-item">
+                    <i class="fas fa-rupee-sign"></i>
+                    <div><strong>Subsidy Guidance</strong> - We handle all paperwork</div>
+                </div>
+                <div class="hero-highlight-item">
+                    <i class="fas fa-chart-line"></i>
+                    <div><strong>80% Savings</strong> - Cut electricity bills dramatically</div>
+                </div>
+            </div>
+
+            <div class="stats-mini">
+                <div>
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div>
+                    <h3>12+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div>
+                    <h3>25y</h3>
+                    <p>Warranty</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 25px;">
+                <a href="quote.html" class="btn-primary"><i class="fas fa-file-invoice"></i> Get Free Quote</a>
+                <a href="tel:+919074167817" class="btn-outline"><i class="fas fa-phone-alt"></i> Call Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Solar Panel Installation" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Trust Strip -->
+<div class="trust-strip">
+    <div class="container">
+        <span><i class="fas fa-medal"></i> MNRE Approved</span>
+        <span><i class="fas fa-shield-alt"></i> ISO Certified</span>
+        <span><i class="fas fa-trophy"></i> Award Winner 2024</span>
+        <span><i class="fas fa-hand-holding-heart"></i> 500+ Families</span>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Services Section -->
+    <h2>Our Solar Solutions</h2>
+    <p class="section-subhead">Complete solar systems designed for maximum savings and reliability</p>
     
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-home"></i></div>
+            <h3>Residential Rooftop</h3>
+            <p>Custom solar systems for homes. Cut electricity bills by up to 80% with net metering and subsidies.</p>
+            <a href="services.html#residential" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-building"></i></div>
+            <h3>Commercial Systems</h3>
+            <p>High-capacity solutions for factories, offices, and warehouses. Accelerated depreciation benefits.</p>
+            <a href="services.html#commercial" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-water"></i></div>
+            <h3>Solar Water Pumps</h3>
+            <p>Agricultural pumping solutions with zero diesel cost. PM KUSUM subsidy eligible.</p>
+            <a href="services.html#pump" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Hybrid Systems</h3>
+            <p>Grid-connected with battery backup. Uninterrupted power during outages.</p>
+            <a href="services.html#hybrid" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-battery-full"></i></div>
+            <h3>Off-Grid Systems</h3>
+            <p>Complete energy independence for remote locations. Lithium battery banks.</p>
+            <a href="services.html#offgrid" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+            <h3>Free Site Survey</h3>
+            <p>Engineers visit your site for shadow analysis, load calculation, and feasibility report.</p>
+            <a href="services.html#survey" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <h2>Why Choose Trupti Enterprises?</h2>
+    <div class="why-grid">
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-tools"></i></div>
+            <h4>Free Site Survey</h4>
+            <p>Engineers visit your site for shadow analysis and detailed feasibility report at no cost.</p>
+        </div>
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+            <h4>Subsidy Experts</h4>
+            <p>We handle all MNRE and state subsidy paperwork. You get maximum financial benefits.</p>
+        </div>
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>25-Year Warranty</h4>
+            <p>Premium tier-1 panels, German-engineered inverters, and structural warranty.</p>
+        </div>
+        <div class="why-card">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h4>7-Day Installation</h4>
+            <p>Most residential projects completed within a week. Minimal disruption to your routine.</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div>
+            <div class="stat-large">500+</div>
+            <div>Solar Plants</div>
+        </div>
+        <div>
+            <div class="stat-large">12+</div>
+            <div>Years Experience</div>
+        </div>
+        <div>
+            <div class="stat-large">80%</div>
+            <div>Avg. Savings</div>
+        </div>
+        <div>
+            <div class="stat-large">50L+</div>
+            <div>kWh Generated</div>
+        </div>
+    </div>
+
+    <!-- Gallery Preview -->
+    <h2>Recent Installations</h2>
+    <div class="gallery-preview">
+        <div class="preview-item">
+            <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="8kW Rooftop Installation">
+            <div class="preview-overlay">
+                <h4>8kW Residential</h4>
+                <p>Sharma Residence, MP Nagar</p>
+            </div>
+        </div>
+        <div class="preview-item">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="5HP Solar Pump">
+            <div class="preview-overlay">
+                <h4>5HP Solar Pump</h4>
+                <p>Farmer's Cooperative, Sehore</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin: 20px 0 40px;">
+        <a href="gallery.html" class="btn-outline">View All Projects <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial-card">
+        <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Trupti Enterprises installed a 5kW system at my home. The team was professional, completed installation in 4 days, and helped me get the subsidy. My electricity bill dropped from ₹6,000 to ₹800 per month. Highly recommended!"</p>
+        <div class="testimonial-author">
+            <div class="author-icon">AK</div>
+            <div class="author-info">
+                <h4>Anil Kumar</h4>
+                <p>Homeowner, Arera Colony, Bhopal</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+        <h2>Ready to Start Saving?</h2>
+        <p style="font-size:1.2rem; margin-bottom: 30px; opacity:0.9;">Join 500+ happy families. Get your free site survey today.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/919479927817?text=Hello%20Trupti%20Enterprises%2C%20I%20want%20to%20book%20a%20FREE%20Site%20Survey." class="btn-primary" style="background:#FFD966; color:#0F2E26;" target="_blank"><i class="fab fa-whatsapp"></i> Book Free Survey</a>
+            <a href="quote.html" class="btn-wa"><i class="fab fa-whatsapp"></i> Get Quote</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>TRUPTI ENTERPRISES</h4>
+            <p><i class="fas fa-map-marker-alt" style="color: #FFD966;"></i> Plot No. 39, 2nd Floor, MP Nagar Zone I, Bhopal - 462011</p>
+            <p><i class="fas fa-envelope" style="color: #FFD966;"></i> contact@truptisolar.in</p>
+            <span class="footer-phone">9074167817</span>
+            <p>9589396683 | 7987377586</p>
+            <p><i class="fab fa-whatsapp" style="color: #FFD966;"></i> Customer Care: 9479927817</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Project Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="quote.html">Get Quote</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our Services</h4>
+            <ul class="footer-links">
+                <li><a href="services.html#residential">Residential Solar</a></li>
+                <li><a href="services.html#commercial">Commercial Solar</a></li>
+                <li><a href="services.html#pump">Solar Water Pumps</a></li>
+                <li><a href="services.html#hybrid">Hybrid Systems</a></li>
+                <li><a href="services.html#offgrid">Off-Grid Systems</a></li>
+                <li><a href="services.html#survey">Site Survey</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Business Hours</h4>
+            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+            <p>Sunday: Closed (Emergency Support)</p>
+            <p><a href="https://maps.google.com/?q=Plot+No+39+2nd+Floor+MP+Nagar+Zone+I+Bhopal" target="_blank"><i class="fas fa-map"></i> Open in Google Maps</a></p>
+            <p style="margin-top:20px;">SSL Secured <i class="fas fa-lock"></i></p>
+            <p>© 2025 Trupti Enterprises</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919479927817?text=Hello%20Trupti%20Enterprises%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20know%20more." class="floating-wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const closeMenu = document.getElementById('closeMenu');
+
+    function openMenu() {
+        mobileMenu.classList.add('active');
+        menuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenuFunc() {
+        mobileMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFunc);
+    menuOverlay.addEventListener('click', closeMenuFunc);
+</script>
+
+</body>
+</html>
